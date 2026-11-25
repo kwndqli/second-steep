@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second Steep</title>
+  <meta name="description" content="A brewing companion for loose-leaf tea in small pots: leaf weights, steep-by-steep timers and a tasting journal.">
+  <meta name="theme-color" content="#e7ebe1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Skip to content</a>
+  <header class="top">
+    <a class="mark" href="#/" aria-label="Second Steep, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12h18v5a9 9 0 0 1-18 0z" fill="currentColor"/><path d="M23 14h2.5a3 3 0 0 1 0 6H22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 4c2 2-2 3 0 5M16 3c2 2-2 3 0 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <span>Second Steep</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#/" data-nav="brew">Brew</a>
+      <a href="#/teas" data-nav="teas">Teas</a>
+      <a href="#/journal" data-nav="journal">Journal</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <noscript><p class="empty">Second Steep needs JavaScript for its timer and journal. Turn it on and reload the page.</p></noscript>
+  </main>
+
+  <footer class="foot">
+    <p>Times and temperatures are starting points. Taste, then adjust. Your journal stays in this browser.</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
